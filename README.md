@@ -39,3 +39,22 @@ We can design an icon pack similar to a typeface with various weights, and manag
 }
 ```
 </div>
+
+## Rotate the icon
+
+![rotate](https://github.com/illustrayking/variable-icons/assets/25862601/a417f523-22be-4a8d-81d6-ed27efe6b23e)
+
+We can also generate a unique style by employing rotation to orient the glyph at the desired angle.
+
+in this case i can rotate an *arrow icon* to create different style of arrow without having another icon variation just for rotation
+
+<div dir="ltr">
+
+```css
+.icon {
+    font-family: 'myIcon';
+    font-variation-settings: 'RTAT' 45; /*show my glyph in 45 degree*/
+    font-variation-settings: 'RTAT' 180; /*show my glyph in 180 degree*/
+}
+```
+</div>
