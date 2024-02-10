@@ -22,3 +22,20 @@ We aim to create diverse icon packs by leveraging the capabilities of OpenType a
 
 
 With technologies like variable fonts or OpenType, we can create diverse styles and features for icons. Here, we explore some of them together to understand what variable icons are and how appealing they can be for a project.
+
+### adjust icon thickness using font-weight
+
+![icon-weight](https://github.com/illustrayking/variable-icons/assets/25862601/8c60f086-9c47-4e0b-9441-3595836ecddb)
+
+We can design an icon pack similar to a typeface with various weights, and manage the icon thickness by utilizing the CSS property "font-weight."
+
+<div dir="ltr">
+
+```css
+.icon {
+    font-family: 'myIcon';
+    font-weight: 400; /*using css standard property*/
+    font-variation-settings: 'wght' 400; /*or using css low level property*/
+}
+```
+</div>
