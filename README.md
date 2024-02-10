@@ -17,3 +17,8 @@ We aim to create diverse icon packs by leveraging the capabilities of OpenType a
 - Create any custom style like (caps, rotate, flip,...)
 - create 999 axes of styles within a single file
 - modify and control styles using `font-variation-settings` and `font-feature-settings`
+
+## What possibilities are available with variable icons?
+
+
+With technologies like variable fonts or OpenType, we can create diverse styles and features for icons. Here, we explore some of them together to understand what variable icons are and how appealing they can be for a project.
