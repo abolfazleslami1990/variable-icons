@@ -1,6 +1,6 @@
 # Variable Icons
 
-Icons empowered by the capabilities of **typography** and **OpenType** features
+*Icons empowered by the capabilities of **typography** and **OpenType** features*
 
 ---
 
