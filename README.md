@@ -58,3 +58,20 @@ in this case i can rotate an *arrow icon* to create different style of arrow wit
 }
 ```
 </div>
+
+## Caps the icon
+
+![caps](https://github.com/illustrayking/variable-icons/assets/25862601/56a56518-b3c7-47ab-9c89-22b86dba8687)
+
+We can establish a boolean style to determine whether an icon's endpoint should be rectangular or rounded.
+
+<div dir="ltr">
+
+```css
+.icon {
+    font-family: 'myIcon';
+    font-variation-settings: 'CAPS' 0; /*rect end-point*/
+    font-variation-settings: 'CAPS' 1; /*round end-point*/
+}
+```
+</div>
