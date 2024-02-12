@@ -75,3 +75,66 @@ We can establish a boolean style to determine whether an icon's endpoint should 
 }
 ```
 </div>
+
+## Flip the icon
+
+if we can flip the icon horizontaly or vertically only with style variation
+
+<div dir="ltr">
+
+```css
+.icon {
+    font-family: 'myIcon';
+    font-variation-settings: 'HFLP' 0; /*don't flip my icon horizontally*/
+    font-variation-settings: 'HFLP' 1; /*flip my icon horizontally*/
+}
+```
+</div>
+
+As shown in the image below, we horizontally flip the icon to position the Chimney on the left side of the home icon, reflecting the desired orientation.
+
+![flip](https://github.com/illustrayking/variable-icons/assets/25862601/723eba3c-a49e-44f6-b289-7c9047753efd)
+
+or even flip vertically
+
+<div dir="ltr">
+
+```css
+.icon {
+    font-family: 'myIcon';
+    font-variation-settings: 'VFLP' 0; /*don't flip my icon vertically*/
+    font-variation-settings: 'VFLP' 1; /*flip my icon vertically*/
+}
+```
+</div>
+
+![flip-vertically](https://github.com/illustrayking/variable-icons/assets/25862601/45279239-d8a8-4363-b27b-53754cc5cef1)
+
+## using stylistics sets to store alternatives
+
+In OpenType fonts, activating alternative glyphs through stylistic sets is feasible. This feature can be utilized to store different versions of icons as well.
+
+```css
+.icon {
+    font-family: 'myIcon';
+    font-variation-settings: 'wght' 400, 'CAPS' 1;
+    font-feature-settings: 'ss01' 1; /*show the next version of my glyphs*/
+}
+```
+
+In this case, activating stylistic sets in OpenType fonts transforms all icons into an alternate version.
+
+like image below
+
+![ss01](https://github.com/illustrayking/variable-icons/assets/25862601/ba9d9c3a-e572-42e3-9406-88273af8266d)
+
+With 20 stylistic sets for my icons, it implies that if an icon has more than 2 different versions, we can store them using additional sets labeled as ssXX.
+
+```css
+.icon {
+    font-family: 'myIcon';
+    font-variation-settings: 'wght' 400, 'CAPS' 1;
+    font-feature-settings: 'ss03' 1; /*enable third version of my icons*/
+}
+```
+![other-ss](https://github.com/illustrayking/variable-icons/assets/25862601/ccac0b0d-2dbb-4a54-af3f-b6c0b8643ea5)
