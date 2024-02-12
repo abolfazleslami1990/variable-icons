@@ -138,3 +138,34 @@ With 20 stylistic sets for my icons, it implies that if an icon has more than 2 
 }
 ```
 ![other-ss](https://github.com/illustrayking/variable-icons/assets/25862601/ccac0b0d-2dbb-4a54-af3f-b6c0b8643ea5)
+
+## multiple color fonts
+Color fonts (also known as chromatic fonts) can use multiple colors in a single glyph
+
+with ability of opentype we can also have icons with multiple colors
+
+![colorful-icons](https://github.com/illustrayking/variable-icons/assets/25862601/461eedb5-3627-4162-beec-e036f1132c74)
+
+we can even change the color or set the default color scheme for my entire icons using CSS
+
+```css
+@font-palette-values --dragon {
+    font-family: 'myIcon';
+    base-palette: 3; /*choose the third color scheme as a default for dragon identifier*/
+}
+@font-palette-values --alpha {
+    font-family: 'myIcon';
+    override-colors:
+      0 #003F55;
+      1 #7FD6FF;
+}
+
+.icon {
+    font-family: 'myIcon';
+    font-palette: --alpha;
+}
+```
+
+## conclusion
+
+With OpenType capabilities and CSS, we can create versatile font icon packs with numerous styles and features, all within a single file.
