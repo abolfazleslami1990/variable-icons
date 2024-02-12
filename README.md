@@ -46,7 +46,7 @@ We can design an icon pack similar to a typeface with various weights, and manag
 
 We can also generate a unique style by employing rotation to orient the glyph at the desired angle.
 
-in this case i can rotate an *arrow icon* to create different style of arrow without having another icon variation just for rotation
+in this case i can rotate an *arrow icon* to create different style of arrow without having another codepoint just for rotation
 
 <div dir="ltr">
 
